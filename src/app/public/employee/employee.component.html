@@ -1,0 +1,21 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Company Name</th>
+      <th scope="col">Job Title</th>
+      <th scope="col">Join Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let employee of employees; index as i ">
+      <th>{{i + 1}}</th>
+      <td>{{employee.companyName}}</td>
+      <td>{{employee.jobTitle}}</td>
+      <td>{{employee.joinDate}}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<ngx-skeleton-loader count="{{totalCount}}" appearance="line" *ngIf="loader"></ngx-skeleton-loader>

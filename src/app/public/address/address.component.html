@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Street</th>
+      <th scope="col">City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let address of addresses; index as i ">
+      <th>{{i + 1}}</th>
+      <td>{{address.street}}</td>
+      <td>{{address.city}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<ngx-skeleton-loader count="{{totalCount}}" appearance="line" *ngIf="loader"></ngx-skeleton-loader>

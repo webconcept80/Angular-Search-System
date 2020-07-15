@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6 offset-3">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" routerLink="landing">Home</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="users">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="addresses">Addresses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="employees">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="details">Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="secret">Secret</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <hr>
+  <router-outlet></router-outlet>
+</div>
